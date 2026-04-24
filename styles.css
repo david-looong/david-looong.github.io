@@ -1,0 +1,167 @@
+/* ---------- Reset & base ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background: #fafaf7;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  margin-bottom: 4rem;
+}
+
+.site-name {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.site-nav a {
+  color: #666;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.site-nav a:hover {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+  margin-bottom: 4rem;
+  max-width: 520px;
+}
+
+.intro h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  color: #555;
+}
+
+/* ---------- Section headings ---------- */
+
+section h2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* ---------- Writing list ---------- */
+
+.post-list {
+  list-style: none;
+  border-top: 1px solid #e5e3dd;
+}
+
+.post-list li {
+  border-bottom: 1px solid #e5e3dd;
+}
+
+.post-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem 0;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.post-list a:hover {
+  color: #666;
+}
+
+.post-date {
+  font-size: 13px;
+  color: #999;
+}
+
+/* ---------- Projects ---------- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project-grid h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.project-grid p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e3dd;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #999;
+}
+
+.site-footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #1a1a1a;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 520px) {
+  body {
+    padding: 2rem 1.25rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
