@@ -122,6 +122,19 @@ section {
   color: #555;
 }
 
+.about-text ul {
+  color: #555;
+  padding-left: 1.75rem;
+}
+
+.about-text li {
+  margin-bottom: 0.4rem;
+}
+
+.about-text li:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 520px) {
   .about {
     flex-direction: column;
@@ -199,32 +212,83 @@ section {
 
 /* ---------- Writing list ---------- */
 
-.post-list {
-  list-style: none;
-  border-top: 1px solid #e5e3dd;
+.writing-section h2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
 }
 
-.post-list li {
-  border-bottom: 1px solid #e5e3dd;
+/* ---------- Individual post ---------- */
+
+.post-article {
+  max-width: 600px;
 }
 
-.post-list a {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 1rem 0;
-  color: #1a1a1a;
+.post-back {
+  display: inline-block;
+  font-size: 13px;
+  color: #999;
   text-decoration: none;
+  margin-bottom: 1.5rem;
   transition: color 0.15s;
 }
 
-.post-list a:hover {
-  color: #666;
+.post-back:hover {
+  color: #1a1a1a;
 }
 
-.post-date {
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.post-meta {
   font-size: 13px;
   color: #999;
+}
+
+.post-body p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.post-body h2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 2rem 0 1rem;
+}
+
+.post-body strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.post-body em {
+  font-style: italic;
+}
+
+.post-body code {
+  font-family: "SF Mono", "Fira Code", Menlo, Consolas, monospace;
+  font-size: 13px;
+  background: #f0ede6;
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  color: #444;
 }
 
 /* ---------- Projects page ---------- */
